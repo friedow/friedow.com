@@ -1,0 +1,247 @@
+/***** FONTS *****/
+
+@font-face {
+    font-family: 'Tajawal';
+    font-weight: 300;
+    src: url('fonts/Tajawal-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-weight: 400;
+    src: url('fonts/Tajawal-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-weight: 500;
+    src: url('fonts/Tajawal-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-weight: 700;
+    src: url('fonts/Tajawal-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-weight: 800;
+    src: url('fonts/Tajawal-ExtraBold.ttf') format('truetype');
+}
+
+
+/***** GENERAL *****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafafa;
+    /* color: white; */
+    margin: 0;
+    font-family: 'Questrial', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    max-width: 700px;
+    padding: 60px 60px 60px 100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    display: block;
+}
+
+ol li h1:before,
+ol li h2:before {
+    content: counter(item, decimal-leading-zero) " ";
+    counter-increment: item;
+    position: absolute;
+    font-weight: 800;
+}
+
+ol li h1:before {
+    left: -45px;
+    bottom: 8px;
+    font-size: 25px;
+    border-bottom: 3px solid black;
+}
+
+ol li h2:before {
+    left: -35px;
+    bottom: 6px;
+    font-size: 17px;
+    border-bottom: 2px solid black;
+}
+
+
+/***** TYPOGRAPHY *****/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 700;
+    position: relative;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p,
+span {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/***** HEADER & FOOTER *****/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 20px;
+    color: grey;
+    font-size: 17px;
+    line-height: 1;
+}
+
+footer nav a {
+    margin-left: 20px;
+}
+
+/***** CONTENT *****/
+
+.section-content {
+    padding: 30px 0 80px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 80px 0.65fr 80px 1fr;
+    gap: 20px;
+}
+
+.skills img {
+    height: 70px;
+    width: auto;
+    justify-self: center;
+}
+
+.skills span {
+    align-self: center;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px 1fr 30px 0.2fr;
+    gap: 10px;
+}
+
+.tools img {
+    justify-self: center;
+    align-self: center;
+}
+
+.tools span {
+    align-self: center;
+}
+
+.offtime {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px 1fr 60px 0.5fr;
+    gap: 20px;
+}
+
+.offtime img {
+    justify-self: center;
+    align-self: center;
+}
+
+.offtime span {
+    align-self: center;
+}
+
+.experience li,
+.education li {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+}
+
+.experience li span,
+.education li span,
+.projects li span {
+    color: grey;
+}
+
+.experience li time,
+.education li time {
+    text-align: right;
+
+}
+
+.experience li,
+.education li,
+.projects li {
+    padding-bottom: 20px;
+}
+
+.experience li:last-child,
+.education li:last-child,
+.projects li:last-child {
+    padding-bottom: 0;
+}
+
+.projects img {
+    height: 19px;
+    top: 2px;
+    position: relative;
+}
+
+@media print {
+    .education {
+        page-break-before: always;
+        margin-top: 100px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    main {
+        height: 188vh;
+    }
+}
