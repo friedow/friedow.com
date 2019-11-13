@@ -48,6 +48,7 @@ main {
     max-width: 700px;
     padding: 60px 60px 60px 100px;
     margin: 0px auto;
+    position: relative;
 }
 
 img {
@@ -201,7 +202,8 @@ footer nav a {
 }
 
 .experience li span,
-.education li span {
+.education li span,
+.projects li span {
     color: grey;
 }
 
@@ -212,13 +214,21 @@ footer nav a {
 }
 
 .experience li,
-.education li {
+.education li,
+.projects li {
     padding-bottom: 20px;
 }
 
 .experience li:last-child,
-.education li:last-child {
+.education li:last-child,
+.projects li:last-child {
     padding-bottom: 0;
+}
+
+.projects img {
+    height: 19px;
+    top: 2px;
+    position: relative;
 }
 
 @media print {
