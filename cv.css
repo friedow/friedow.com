@@ -143,6 +143,7 @@ footer nav a {
     margin-left: 20px;
 }
 
+
 /***** CONTENT *****/
 
 .section-content {
@@ -210,7 +211,6 @@ footer nav a {
 .experience li time,
 .education li time {
     text-align: right;
-
 }
 
 .experience li,
@@ -225,22 +225,47 @@ footer nav a {
     padding-bottom: 0;
 }
 
+.contact .information img,
 .projects img {
     height: 19px;
     top: 2px;
     position: relative;
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .information p {
+    line-height: 2;
+}
+
+.contact .information p img {
+    height: 16px;
+}
+
+.contact .information a {
+    color: black;
+}
+
+.contact .profile-image {
+    border-radius: 50%;
+}
+
 @media print {
     .education {
         page-break-before: always;
-        margin-top: 100px;
+        padding-top: 80px;
     }
-
+    .projects {
+        padding-top: 80px;
+    }
     footer {
         display: none;
     }
-
     main {
         height: 188vh;
     }
