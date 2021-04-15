@@ -160,6 +160,14 @@ table tr:last-child td {
   margin-right: -2rem;
 }
 
+.profile {
+	margin-bottom: 15vh;
+}
+
+.project:first-child {
+	margin-top: 35vh;
+}
+
 .project, .project-links, .profile {
   display: flex;
   align-items: center;
