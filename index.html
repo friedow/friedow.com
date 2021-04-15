@@ -1,96 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8">
+    <title>friedow | custom-made code</title>
+    <meta name="description" content="friedow | custom-made code" />
+    <meta name="author" content="Christian Friedow" />
 
-  <title>friedow | custom-made code</title>
-  <meta name="description" content="friedow | custom-made code">
-  <meta name="author" content="Christian Friedow">
+    <meta property="og:title" content="friedow" />
+    <meta property="og:description" content="custom-made code" />
+    <meta property="og:image" content="img/friedow.png" />
 
-  <meta property="og:title" content="friedow"/>
-  <meta property="og:description" content="custom-made code" />
-  <meta property="og:image" content="img/friedow.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="favicon.png" sizes="180x180" />
 
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
-  <link rel="apple-touch-icon" href="favicon.png" sizes="180x180">
+    <link rel="stylesheet" href="style.css?v=1.0" />
+  </head>
 
-  <link rel="stylesheet" href="style.css?v=1.0">
-</head>
-
-<body>
-  <header>
-    <div class="logo-container">
-      <a href="/#">
-        <img class="icon" src="img/friedow.svg" />
-      </a>
-    </div>
-
-    <nav>
-      <a href="/#projects">
-        Projects
-      </a>
-    </nav>
-
-  </header>
-
-  <main>
-
-    <section>
-      <h1>friedow</h1>
-      <h2 class="subtitle">custom-made code</h2>
-      <div class="icon-container">
-        <a href="https://github.com/friedow" title="Github">
-          <img class="icon" src="img/github.svg" />
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="/#">
+          <img class="icon" src="img/friedow.svg" />
         </a>
       </div>
-    </section>
 
-    <section id="projects">
-      <div class="project">
-        <div class="project-description">
-          <h2>Kirito</h2>
-          <p>Kirito is a Discord bot encouraging players to join voice channels on Discord Servers. It provides a gamified leveling system based on player-in-voice time.</p>
-          <div class="project-links">
-            <a href="https://kirito.friedow.com" class="button" title="Website">Tell Me More</a>
-            <a
-              href="https://discordapp.com/api/oauth2/authorize?client_id=340419258045562882&permissions=402705408&scope=bot"
-              title="Add Kirito to your Discord Server">
-              <img class="icon" src="img/discord.svg" />
-            </a>
-            <a href="https://discordbots.org/bot/340419258045562882" title="Discord Bot List">
-              <img class="icon" src="img/discordbots.svg" />
-            </a>
-            <a href="https://github.com/friedow/kirito" title="Github">
-              <img class="icon" src="img/github.svg" />
-            </a>
+      <nav>
+        <a href="/#projects"> Projects </a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>friedow</h1>
+        <h2 class="subtitle">custom-made code</h2>
+        <div class="icon-container">
+          <a href="https://github.com/friedow" title="Github">
+            <img class="icon" src="img/github.svg" />
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="profile">
+          <div class="profile-image">
+            <img src="img/contact/christian.jpg" />
+          </div>
+          <div class="profile-description">
+            <h2>Hi, I'm Christian.</h2>
+            <p>
+              I'm a full-stack developer, software architect and open-source
+              contributor located in Berlin, Germany. I dedicate my time to
+              projects that help to simplify the daily routine of others.
+            </p>
+            <p>
+              Currently, I work in a small team of software engineers,
+              physicians and researchers at Charité – Universitätsmedizin
+              Berlin. We develop dot.base, a FHIR-fueled health record system.
+            </p>
+            <div class="project-links">
+              <a href="#dot-base" class="button" title="dot.base"
+                >More about dot.base</a
+              >
+              <a href="https://github.com/friedow" title="Github">
+                <img class="icon" src="img/github.svg" />
+              </a>
+            </div>
           </div>
         </div>
-        <div class="project-image">
-          <img src="img/kirito-showcase.png">
+      </section>
+
+      <section>
+        <div class="project">
+          <div class="project-description">
+            <h2>dot.base</h2>
+            <p>
+              dot.base is an open-source Health Record System.
+              It is build to simplify the clinical documentation through user centric design.
+              Additionally, a FHIR-based architecture ensures interoperability.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://dotbase.org"
+                class="button"
+                title="Website"
+                >Tell Me More</a
+              >
+              <a href="https://github.com/dot-base" title="Github">
+                <img class="icon" src="img/github.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/dot-base-showcase.png" />
+          </div>
         </div>
-      </div>
-    </section>
 
-  </main>
+        <div class="project">
+          <div class="project-image">
+            <img src="img/rembrandt-showcase.png" />
+          </div>
+          <div class="project-description">
+            <h2>Rembrandt</h2>
+            <p>
+              Rembrandt is a resource organization and resource usage optimization plattform.
+              It is fully integrated with a business process management system and features a bring your own code system utilizing docker containers.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://rembrandt.gitbook.io/docs/"
+                class="button"
+                title="Website"
+                >Rembrandt Docs</a
+              >
+              <a href="https://github.com/bptlab/rembrandt" title="Github">
+                <img class="icon" src="img/github.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <span class="copyright">
-      © 2019 - Christian Friedow
-    </span>
+        <div class="project">
+          <div class="project-description">
+            <h2>Kirito</h2>
+            <p>
+              Kirito is a Discord bot encouraging players to join voice channels
+              on Discord Servers. It provides a gamified leveling system based
+              on player-in-voice time.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://kirito.friedow.com"
+                class="button"
+                title="Website"
+                >Tell Me More</a
+              >
+              <a
+                href="https://discordapp.com/api/oauth2/authorize?client_id=340419258045562882&permissions=402705408&scope=bot"
+                title="Add Kirito to your Discord Server"
+              >
+                <img class="icon" src="img/discord.svg" />
+              </a>
+              <a
+                href="https://discordbots.org/bot/340419258045562882"
+                title="Discord Bot List"
+              >
+                <img class="icon" src="img/discordbots.svg" />
+              </a>
+              <a href="https://github.com/friedow/kirito" title="Github">
+                <img class="icon" src="img/github.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/kirito-showcase.png" />
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <nav>
-      <a href="/impressum">
-        Impressum
-      </a>
-      <a href="/datenschutz">
-        Datenschutz
-      </a>
-    </nav>
-  </footer>
-</body>
+    <footer>
+      <span class="copyright"> © 2019 - Christian Friedow </span>
 
+      <nav>
+        <a href="/impressum"> Impressum </a>
+        <a href="/datenschutz"> Datenschutz </a>
+      </nav>
+    </footer>
+  </body>
 </html>
