@@ -1,33 +1,18 @@
 /***** FONTS *****/
-
 @font-face {
-    font-family: 'Tajawal';
+    font-family: 'Lato';
     font-weight: 300;
-    src: url('fonts/Tajawal-Light.ttf') format('truetype');
+    src: url('fonts/Lato-Light.ttf') format('truetype');
 }
-
 @font-face {
-    font-family: 'Tajawal';
+    font-family: 'Lato';
     font-weight: 400;
-    src: url('fonts/Tajawal-Regular.ttf') format('truetype');
+    src: url('fonts/Lato-Regular.ttf') format('truetype');
 }
-
 @font-face {
-    font-family: 'Tajawal';
-    font-weight: 500;
-    src: url('fonts/Tajawal-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Tajawal';
+    font-family: 'Lato';
     font-weight: 700;
-    src: url('fonts/Tajawal-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Tajawal';
-    font-weight: 800;
-    src: url('fonts/Tajawal-ExtraBold.ttf') format('truetype');
+    src: url('fonts/Lato-Bold.ttf') format('truetype');
 }
 
 
@@ -41,7 +26,7 @@ body {
     background-color: #ffffff;
     /* color: white; */
     margin: 0;
-    font-family: 'Questrial', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 main {
@@ -91,13 +76,18 @@ ol li h2:before {
 /***** TYPOGRAPHY *****/
 
 h1,
-h2,
+h2 {
+    margin: 0;
+    font-weight: 700;
+    position: relative;
+}
+
 h3,
 h4,
 h5,
 h6 {
     margin: 0;
-    font-weight: 700;
+    font-weight: 400;
     position: relative;
 }
 
@@ -118,7 +108,7 @@ span {
     margin: 0;
     line-height: 1.4;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 a,
@@ -147,7 +137,7 @@ footer nav a {
 /***** CONTENT *****/
 
 .section-content {
-    padding: 30px 0 80px;
+    padding: 30px 0 70px;
 }
 
 .skills {
@@ -181,21 +171,6 @@ footer nav a {
     align-self: center;
 }
 
-.offtime {
-    display: grid;
-    grid-template-columns: 50px 1fr 50px 1fr 50px 0.5fr;
-    gap: 20px;
-}
-
-.offtime img {
-    justify-self: center;
-    align-self: center;
-}
-
-.offtime span {
-    align-self: center;
-}
-
 .experience li,
 .education li {
     display: grid;
@@ -211,6 +186,7 @@ footer nav a {
 .experience li time,
 .education li time {
     text-align: right;
+    font-weight: 300;
 }
 
 .experience li,
@@ -256,15 +232,10 @@ footer nav a {
 }
 
 @media print {
-    /* .education {
-        page-break-before: always;
-        padding-top: 80px;
-    } */
-
     @page {
         size: A4; /* DIN A4 standard, Europe */
         margin: 27mm 8mm 20mm 0mm;
-      }
+    }
 
     .sections > li {
         break-inside: avoid;
@@ -273,7 +244,4 @@ footer nav a {
     footer {
         display: none;
     }
-    /* main {
-        height: 188vh;
-    } */
 }
