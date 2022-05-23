@@ -118,13 +118,13 @@ span {
     margin: 0;
     line-height: 1.4;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 a,
 a:hover {
     text-decoration: none;
-    color: grey;
+    color: black;
 }
 
 
@@ -153,11 +153,11 @@ footer nav a {
 .skills {
     display: grid;
     grid-template-columns: 80px 0.65fr 80px 1fr;
-    gap: 20px;
+    gap: 10px 5px;
 }
 
 .skills img {
-    height: 70px;
+    height: 50px;
     width: auto;
     justify-self: center;
 }
@@ -183,7 +183,7 @@ footer nav a {
 
 .offtime {
     display: grid;
-    grid-template-columns: 60px 1fr 60px 1fr 60px 0.5fr;
+    grid-template-columns: 50px 1fr 50px 1fr 50px 0.5fr;
     gap: 20px;
 }
 
@@ -234,7 +234,7 @@ footer nav a {
 
 .contact {
     display: grid;
-    grid-template-columns: 1fr 200px 1fr;
+    grid-template-columns: 1fr 180px 1fr;
     align-items: center;
     text-align: center;
 }
@@ -256,17 +256,24 @@ footer nav a {
 }
 
 @media print {
-    .education {
+    /* .education {
         page-break-before: always;
         padding-top: 80px;
+    } */
+
+    @page {
+        size: A4; /* DIN A4 standard, Europe */
+        margin: 27mm 8mm 20mm 0mm;
+      }
+
+    .sections > li {
+        break-inside: avoid;
     }
-    .projects {
-        padding-top: 80px;
-    }
+    
     footer {
         display: none;
     }
-    main {
+    /* main {
         height: 188vh;
-    }
+    } */
 }
