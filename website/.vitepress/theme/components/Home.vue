@@ -1,5 +1,7 @@
 <script setup>
 import Navbar from "./Navbar.vue";
+import Teaser from "./sections/Teaser.vue";
+import Footer from "./Footer.vue";
 </script>
 
 <style lang="postcss">
@@ -19,7 +21,7 @@ import Navbar from "./Navbar.vue";
 }
 
 /***** TYPOGRAPHY *****/
-
+/* 
 h1,
 h2,
 h3,
@@ -37,10 +39,6 @@ h2 {
   @apply text-7xl;
 }
 
-.subtitle {
-  @apply text-4xl;
-}
-
 a {
   @apply text-white no-underline font-medium;
 }
@@ -53,7 +51,7 @@ strong {
 
 p, strong {
   @apply max-w-2xl;
-}
+} */
 
 /***** GENERAL *****/
 
@@ -71,9 +69,6 @@ img {
   @apply max-w-full;
 }
 
-/***** HEADER & FOOTER *****/
-
-
 /***** CONTENT *****/
 
 main {
@@ -90,18 +85,6 @@ main section {
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.icon-container {
-  margin-top: 30px;
-}
-
-.icon-container > * {
-  padding: 0px 10px
-}
-
-.icon {
-  height: 50px;
 }
 
 table {
@@ -229,29 +212,10 @@ table tr:last-child td {
 </style>
 
 <template>
-    <!-- <header>
-      <div class="logo-container">
-        <a href="/#home">
-          <img class="icon" src="/images/friedow.svg" />
-        </a>
-      </div>
-
-      <nav>
-        <a href="/#projects"> Projects </a>
-      </nav>
-    </header> -->
     <Navbar />
 
-    <main>
-      <section id="home p-4">
-        <h1>friedow</h1>
-        <h2 class="subtitle">custom-made code</h2>
-        <div class="icon-container">
-          <a href="https://github.com/friedow" title="Github">
-            <img class="icon" src="img/github.svg" />
-          </a>
-        </div>
-      </section>
+    <main class="bg-opacity-20 bg-white">
+      <Teaser />
 
       <section>
         <div class="profile">
@@ -371,12 +335,5 @@ table tr:last-child td {
       </section>
     </main>
 
-    <footer>
-      <span class="copyright"> © 2019 - Christian Friedow </span>
-
-      <nav>
-        <a href="/impressum"> Impressum </a>
-        <a href="/datenschutz"> Datenschutz </a>
-      </nav>
-    </footer>
+    <Footer />
 </template>
