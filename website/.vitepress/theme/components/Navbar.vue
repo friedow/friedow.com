@@ -14,13 +14,11 @@
       gap-4
     "
   >
-    <div class="logo-container">
-      <a href="/#home">
-        <img class="icon" src="/images/friedow.svg" width="50" height="50" />
-      </a>
-    </div>
+    <a href="/#home">
+      <img class="icon" src="/images/friedow.svg" width="50" height="50" />
+    </a>
 
-    <nav class="text-xl flex gap-4">
+    <nav class="text-xl flex gap-6">
       <a
         v-for="link in $frontmatter.navbar.links"
         :key="link.href"
@@ -32,7 +30,7 @@
   </header>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 header {
   box-shadow: 20px 10px 60px #00000050, -20px -10px 60px #ffffff50;
 }

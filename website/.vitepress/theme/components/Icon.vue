@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 import * as icons from "lucide-vue-next";
 
 const props = defineProps<{
@@ -18,7 +18,7 @@ const icon = computed(() => icons[props.name]);
     :is="icon"
     :size="size"
     :color="color"
-    :strokeWidth="strokeWidth"
-    :defaultClass="defaultClass"
+    :stroke-width="strokeWidth"
+    :default-class="defaultClass"
   />
 </template>

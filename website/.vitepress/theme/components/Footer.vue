@@ -7,7 +7,7 @@ function currentYear(): number {
 
 <template>
   <footer class="p-5 flex justify-between text-sm bg-opacity-20 bg-white">
-    <span class="copyright"> © {{ currentYear() }} - Christian Friedow </span>
+    <span> © {{ currentYear() }} - Christian Friedow </span>
 
     <nav class="flex gap-4">
       <a
