@@ -34,6 +34,19 @@ body {
   font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
   @apply text-white m-0;
 }
+
+/* Hover effect on all links */
+a {
+  background-image: linear-gradient(#ffffff 0 0);
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s ease;
+}
+
+a:hover {
+  background-size: 100% 1px;
+}
 </style>
 
 <template>
