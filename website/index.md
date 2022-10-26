@@ -37,6 +37,47 @@ content:
         icon: Linkedin
         href: https://www.linkedin.com/in/friedow/
 
+  projects:
+    - image: /images/dot-base-showcase.png
+      title: dot.base
+      text:
+        - dot.base is an open-source Health Record System.
+          It is build to simplify the clinical documentation through user centric design.
+          Additionally, a FHIR-based architecture ensures interoperability.
+      links:
+        - type: button
+          text: Tell me more
+          href: https://dotbase.org/
+        - type: icon
+          icon: Github
+          href: https://github.com/friedow
+    
+    - image: /images/rembrandt-showcase.png
+      title: Rembrandt
+      text:
+        - Rembrandt is a resource organization and resource usage optimization plattform.
+          It is fully integrated with a business process management system and features a bring your own code system utilizing docker containers.
+      links:
+        - type: button
+          text: More about Rembrandt
+          href: https://rembrandt.gitbook.io/docs/
+        - type: icon
+          icon: Github
+          href: https://github.com/bptlab/rembrandt
+
+    - image: /images/kirito-showcase.png
+      title: Kirito
+      text:
+        - Kirito is a Discord bot encouraging players to join voice channels on Discord Servers.
+          It provides a gamified leveling system based on player-in-voice time.
+      links:
+        - type: button
+          text: Visit Kiritos' Website
+          href: https://kirito.friedow.com/
+        - type: icon
+          icon: Github
+          href: https://github.com/friedow/kirito
+
 footer:
   links:
     - text: Impressum
