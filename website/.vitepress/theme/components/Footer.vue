@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useData } from 'vitepress';
+
+const { frontmatter } = useData();
+
 function currentYear(): number {
   const currentDate = new Date();
   return currentDate.getFullYear();
@@ -10,11 +14,7 @@ function currentYear(): number {
     <span> © {{ currentYear() }} - Christian Friedow </span>
 
     <nav class="flex gap-4">
-      <a
-        v-for="link in $frontmatter.footer.links"
-        :key="link.href"
-        :href="link.href"
-      >
+      <a v-for="link in frontmatter.footer.links" :key="link.href" :href="link.href">
         {{ link.text }}
       </a>
     </nav>

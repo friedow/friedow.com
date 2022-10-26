@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { useData } from 'vitepress';
 import Navbar from "./Navbar.vue";
 import Teaser from "./sections/Teaser.vue";
 import Profile from "./sections/Profile.vue";
 import Project from "./sections/Project.vue";
 import Footer from "./Footer.vue";
+
+const { frontmatter } = useData();
 </script>
 
 <style lang="postcss">
@@ -58,7 +61,7 @@ a:hover {
     <Profile />
 
     <section id="projects">
-      <Project v-for="(project, projectIndex) in $frontmatter.content.projects" :project="project"
+      <Project v-for="(project, projectIndex) in frontmatter.content.projects" :project="project"
         :reverse="projectIndex % 2 === 0" />
     </section>
   </main>
