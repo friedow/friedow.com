@@ -26,6 +26,22 @@ const { frontmatter } = useData();
 }
 
 html {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1536px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
   @apply scroll-smooth;
 }
 

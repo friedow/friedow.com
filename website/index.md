@@ -59,7 +59,7 @@ content:
           It is fully integrated with a business process management system and features a bring your own code system utilizing docker containers.
       links:
         - type: button
-          text: More about Rembrandt
+          text: Rembrandt's Docs
           href: https://rembrandt.gitbook.io/docs/
         - type: icon
           icon: Github

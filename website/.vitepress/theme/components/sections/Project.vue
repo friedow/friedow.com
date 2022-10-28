@@ -22,15 +22,18 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-    <section class="min-h-screen flex items-center justify-center">
-        <div class="max-w-6xl flex items-center gap-16" :class="{ 'flex-row-reverse': reverse }">
-            <img class="w-full max-w-xl" :src="project.image" />
+    <section class="min-h-screen px-8 flex items-center justify-center">
+        <div class="max-w-6xl flex items-center gap-12 sm:gap-0 lg:gap-16 flex-col-reverse sm:-ml-52 lg:ml-0"
+            :class="reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'">
+            <div class="sm:-mr-96 sm:-mt-12 lg:mr-0 lg:mt-0">
+                <img class="w-full max-w-xl" :src="project.image" />
+            </div>
             <div class="flex flex-col gap-8">
                 <div>
                     <span class="font-mono text-sm">Projects</span>
                     <h2 class="-ml-2 text-8xl">{{ project.title }}</h2>
                 </div>
-                <p v-for="paragraph in project.text" :key="paragraph" class="max-w-2xl text-xl">
+                <p v-for="paragraph in project.text" :key="paragraph" class="max-w-lg lg:max-w-2xl text-xl">
                     {{ paragraph }}
                 </p>
                 <div class="flex items-center gap-4">

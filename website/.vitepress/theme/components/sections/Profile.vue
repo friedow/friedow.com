@@ -6,13 +6,16 @@ const { frontmatter } = useData();
 </script>
 
 <template>
-  <section id="profile" class="min-h-screen flex items-center justify-center">
-    <div class="max-w-6xl flex items-center gap-16">
-      <img class="w-80" :src="frontmatter.content.profile.image" />
+  <section id="profile" class="min-h-screen flex items-center justify-center px-8">
+    <div class="max-w-6xl flex flex-col lg:flex-row items-center gap-16">
+      <img class="hidden lg:block w-80" :src="frontmatter.content.profile.image" />
       <div class="flex flex-col gap-8">
-        <div>
-          <span class="font-mono text-sm">About Me</span>
-          <h2 class="-ml-2 text-8xl">{{ frontmatter.content.profile.title }}</h2>
+        <div class="flex gap-8">
+          <img class="h-44 sm:h-56 lg:hidden" :src="frontmatter.content.profile.image" />
+          <div>
+            <span class="font-mono text-sm">About Me</span>
+            <h2 class="-ml-2 text-7xl sm:text-8xl max-w-sm lg:max-w-none">{{ frontmatter.content.profile.title }}</h2>
+          </div>
         </div>
         <p v-for="paragraph in frontmatter.content.profile.text" :key="paragraph" class="max-w-2xl text-xl">
           {{ paragraph }}
