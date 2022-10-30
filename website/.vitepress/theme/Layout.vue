@@ -1,11 +1,9 @@
 <script setup>
-import DefaultTheme from 'vitepress/theme';
-import Home from './components/Home.vue';
-
-const { Layout } = DefaultTheme;
+import Home from './views/Home.vue';
+import MarkdownBased from './views/MarkdownBased.vue';
 </script>
 
 <template>
   <Home v-if="$frontmatter.layout === 'home'" />
-  <Layout v-else />
+  <MarkdownBased v-else />
 </template>

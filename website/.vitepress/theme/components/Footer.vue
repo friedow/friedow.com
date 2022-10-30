@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useData } from 'vitepress';
 
-const { frontmatter } = useData();
+const { theme } = useData();
 
 function currentYear(): number {
   const currentDate = new Date();
@@ -11,10 +11,10 @@ function currentYear(): number {
 
 <template>
   <footer class="px-10 py-5 flex justify-between text-sm bg-opacity-20 bg-white">
-    <span> © {{ currentYear() }} - Christian Friedow </span>
+    <span> © {{ currentYear() }} - {{theme.footer.copyright.author}} </span>
 
     <nav class="flex gap-4">
-      <a v-for="link in frontmatter.footer.links" :key="link.href" :href="link.href">
+      <a v-for="link in theme.footer.links" :key="link.href" :href="link.href">
         {{ link.text }}
       </a>
     </nav>
