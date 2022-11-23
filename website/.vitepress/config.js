@@ -34,12 +34,8 @@ export default {
       },
       links: [
         {
-          text: "Impressum",
-          href: "/impressum",
-        },
-        {
-          text: "Datenschutz",
-          href: "/datenschutz",
+          text: "Impressum & Datenschutz",
+          href: "/impressum-und-datenschutz",
         },
       ],
     },

@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff") format("woff"),
+    url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 500;
+  src: url("../fonts/Raleway-Medium.woff") format("woff"),
+    url("../fonts/Raleway-Medium.ttf") format("truetype");
+}
+
+html {
+  @apply scroll-smooth;
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1536px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background: linear-gradient(
+    24deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 79, 1) 48%,
+    rgb(205 118 22) 100%
+  );
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  @apply text-white m-0;
+}
+
+a {
+  background-image: linear-gradient(#ffffff 0 0);
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+a:hover {
+  background-size: 100% 1px;
+}

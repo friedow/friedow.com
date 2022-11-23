@@ -1,17 +1,10 @@
 <script setup lang="ts">
-import { useData } from 'vitepress';
 import Navbar from "../components/Navbar.vue";
-import Teaser from "../components/sections/Teaser.vue";
-import Profile from "../components/sections/Profile.vue";
-import Project from "../components/sections/Project.vue";
 import Footer from "../components/Footer.vue";
-
-const { frontmatter } = useData();
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 /***** FONTS *****/
-
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Regular.woff") format("woff"),
@@ -24,56 +17,50 @@ const { frontmatter } = useData();
   src: url("../fonts/Raleway-Medium.woff") format("woff"),
     url("../fonts/Raleway-Medium.ttf") format("truetype");
 }
-/* 
-html {
-  font-size: 12px;
+
+>>>h1 {
+  @apply text-6xl !important;
 }
 
-@media (min-width: 1280px) {
-  html {
-    font-size: 14px;
-  }
+>>>h2 {
+  @apply text-3xl !important;
 }
 
-@media (min-width: 1536px) {
-  html {
-    font-size: 16px;
-  }
-} */
-
-html {
-  @apply scroll-smooth;
+>>>h3 {
+  @apply text-2xl !important;
 }
 
-body {
-  background: linear-gradient(24deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(121, 9, 79, 1) 48%,
-      rgb(205 118 22) 100%);
-  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
-  @apply text-white m-0;
+>>>h4 {
+  @apply text-xl !important;
 }
 
-/* Hover effect on all links */
-a {
-  background-image: linear-gradient(#ffffff 0 0);
-  background-size: 0 1px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size .3s ease;
+>>>h5 {
+  @apply text-lg !important;
 }
 
-a:hover {
-  background-size: 100% 1px;
+>>>h1,
+>>>h2,
+>>>h3,
+>>>h4,
+>>>h5,
+>>>h6,
+>>>p {
+  margin-top: 1.5em !important;
+  margin-bottom: 0.25em !important;
+}
+
+>>>a.header-anchor {
+  display: none;
 }
 </style>
 
 <template>
   <Navbar />
 
-  <main class="bg-opacity-20 bg-white min-h-screen">
-    <Content />
-    Hello
+  <main class="bg-opacity-20 bg-white min-h-screen px-10 py-28 flex justify-center">
+    <div class="w-full max-w-3xl">
+      <Content />
+    </div>
   </main>
 
   <Footer />
