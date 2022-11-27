@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */ 
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./index.html",
@@ -7,6 +10,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['"Work Sans"', 'sans-serif'],
+      'raleway': ['Raleway', ...defaultTheme.fontFamily.sans],
+      'lato': ['Lato', ...defaultTheme.fontFamily.sans],
       'mono': ['"Source Code Pro"', 'monospace']
     },
     colors: {
@@ -16,7 +21,7 @@ module.exports = {
       'orange': '#ECAD4C',
       'green': '#36C088',
       'gray': '#575757',
-      'lightgray': '#F2F2F2',
+      'lightgray': '#808080',
       'darkgray': '#262A48',
       'white': '#FFFFFF',
       'black': '#000000',

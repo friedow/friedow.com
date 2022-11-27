@@ -17,6 +17,7 @@ const { theme } = useData();
       items-center
       backdrop-blur-sm
       gap-4
+      z-10
     ">
     <a href="/#home">
       <img class="icon" :src="theme.navbar.logo" width="50" height="50" />

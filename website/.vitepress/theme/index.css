@@ -4,19 +4,35 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Regular.woff") format("woff"),
-    url("../fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("./fonts/Raleway-Regular.woff") format("woff"),
+    url("./fonts/Raleway-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 500;
-  src: url("../fonts/Raleway-Medium.woff") format("woff"),
-    url("../fonts/Raleway-Medium.ttf") format("truetype");
+  src: url("./fonts/Raleway-Medium.woff") format("woff"),
+    url("./fonts/Raleway-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+/* 
 html {
-  @apply scroll-smooth;
+  scroll-behavior: smooth;
   font-size: 12px;
 }
 
@@ -30,17 +46,14 @@ html {
   html {
     font-size: 16px;
   }
+} */
+
+html {
+  font-size: 16px;
 }
 
 body {
-  background: linear-gradient(
-    24deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 79, 1) 48%,
-    rgb(205 118 22) 100%
-  );
-  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
-  @apply text-white m-0;
+  font-size: 1rem;
 }
 
 a {
