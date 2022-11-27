@@ -1,0 +1,26 @@
+{
+  "name": "friedow.com",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "repository": "git@github.com:friedow/friedow.com.git",
+  "author": "friedow <christian@friedow.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev website",
+    "build": "vitepress build website",
+    "serve": "vitepress serve website"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "lucide-vue-next": "^0.92.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7",
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "@fontsource/raleway": "^4.5.11",
+    "@fontsource/source-code-pro": "^4.5.12"
+  }
+}
