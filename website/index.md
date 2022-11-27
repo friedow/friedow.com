@@ -14,7 +14,7 @@ profile:
   image: /images/contact/christian.jpg
   title: Hi, I'm Christian.
   text:
-    - I'm a full-stack developer, software architect and open-source contributor located in Berlin, Germany.
+    - I'm a senior full-stack developer, software architect and open-source contributor located in Berlin, Germany.
       I dedicate my time to projects that help to simplify the daily routine of others.
     - Currently, I work in a small team of software engineers, physicians and researchers at Charité – Universitätsmedizin Berlin.
       We develop dot.base, a FHIR-fueled health record system.

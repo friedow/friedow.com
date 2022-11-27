@@ -4,10 +4,9 @@ layout: cv
 introduction:
   title: Hi! I'm Christian.
   text:
-    I'm a software architect with a passion for creating products that simplify problems and make people smile.
-    To accomplish this, I develop applications with simple but elegant solutions.
-    I can contribute experience in web-, blockchain and health-it development.
-    If you have an interesting problem and need both architectural and developmental support, give me a call 🤙😉.
+    I'm a senior full-stack developer, software architect and open-source contributor located in Berlin, Germany.
+    I dedicate my time to projects that help to simplify the daily routine of others and make them smile 😉.
+    If you have an interesting problem and need both architectural and developmental support, give me a call.
 
 skills:
   title: I'm passionate about
