@@ -50,17 +50,17 @@ div.body {
 </style>
 
 <template>
-  <div class="body font-raleway text-white">
-  <Navbar />
+  <div class="body font-sans text-white">
+    <Navbar />
 
-  <main
-    class="bg-opacity-20 bg-white min-h-screen px-10 py-28 flex justify-center"
-  >
-    <div class="w-full max-w-3xl">
-      <Content />
-    </div>
-  </main>
+    <main
+      class="bg-opacity-20 bg-white min-h-screen px-10 py-28 flex justify-center"
+    >
+      <div class="w-full max-w-3xl">
+        <Content />
+      </div>
+    </main>
 
-  <Footer />
-</div>
+    <Footer />
+  </div>
 </template>

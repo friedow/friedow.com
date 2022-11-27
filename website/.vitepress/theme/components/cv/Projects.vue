@@ -23,7 +23,7 @@ const { frontmatter } = useData();
         </a>
       </div>
 
-      <span class="text-lightgray">{{ project.description }}</span>
+      <span class="text-gray">{{ project.description }}</span>
 
       <div class="flex gap-2">
         <span v-for="tag in project.tags" class="text-xs font-mono">

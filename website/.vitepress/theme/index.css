@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Raleway";
-  src: url("./fonts/Raleway-Regular.woff") format("woff"),
-    url("./fonts/Raleway-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 500;
-  src: url("./fonts/Raleway-Medium.woff") format("woff"),
-    url("./fonts/Raleway-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-weight: 300;
-  src: url('../fonts/Lato-Light.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-weight: 400;
-  src: url('../fonts/Lato-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-weight: 700;
-  src: url('../fonts/Lato-Bold.ttf') format('truetype');
-}
-/* 
 html {
   scroll-behavior: smooth;
   font-size: 12px;
@@ -46,10 +17,6 @@ html {
   html {
     font-size: 16px;
   }
-} */
-
-html {
-  font-size: 16px;
 }
 
 body {
@@ -66,4 +33,11 @@ a {
 
 a:hover {
   background-size: 100% 1px;
+}
+
+@media print {
+  @page {
+    size: A4; /* DIN A4 standard, Europe */
+    margin: 27mm 8mm 20mm 0mm;
+  }
 }

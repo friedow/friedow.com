@@ -17,12 +17,11 @@ div.body {
     rgba(121, 9, 79, 1) 48%,
     rgb(205 118 22) 100%
   );
-  
 }
 </style>
 
 <template>
-  <div class="body font-raleway text-white bg-">
+  <div class="body font-sans text-white">
     <Navbar />
 
     <main class="bg-opacity-20 bg-white min-h-screen">

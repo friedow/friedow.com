@@ -1,7 +1,7 @@
 <script setup>
-import Home from './views/Home.vue';
-import CV from './views/CV.vue';
-import MarkdownBased from './views/MarkdownBased.vue';
+import Home from "./views/Home.vue";
+import CV from "./views/CV.vue";
+import MarkdownBased from "./views/MarkdownBased.vue";
 </script>
 
 <template>

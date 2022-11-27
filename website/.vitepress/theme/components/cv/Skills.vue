@@ -7,14 +7,14 @@ const { frontmatter } = useData();
 
 <template>
   <h2 class="text-3xl">{{ frontmatter.skills.title }}</h2>
-  <div class="grid grid-cols-2 gap-3">
+  <div class="grid grid-cols-3 gap-y-3 gap-x-5">
     <div
       v-for="skill in frontmatter.skills.skills"
-      class="flex gap-4 items-center"
+      class="flex gap-2 items-center"
     >
       <Icon
         :name="skill.icon"
-        :size="32"
+        :size="28"
         :stroke-width="0.75"
         class="text-orange"
       />
