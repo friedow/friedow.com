@@ -49,11 +49,6 @@ experience:
         name: Software- and Webdevelopment Friedow
         url: https://friedow.com/
       time: 2016 - 2020
-    - position: Security and IT-Management Consulting Intern
-      company:
-        name: HiSolutions AG
-        url: https://www.hisolutions.com/
-      time: 09 / 2015
 
 projects:
   title: Projects
