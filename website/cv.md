@@ -124,6 +124,6 @@ contact:
   email: christian@friedow.com
   phone: "+49 174 3736 717"
   github: https://github.com/friedow
-  linkedin: https://www.linkedin.com/in/friedow/
+  linkedin: https://www.linkedin.com/in/friedow
   image: /images/contact/profile.jpg
 ---

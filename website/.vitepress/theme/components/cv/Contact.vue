@@ -51,7 +51,10 @@ const { frontmatter } = useData();
           class="text-darkgray"
         />
         {{
-          frontmatter.contact.linkedin.replace("https://www.linkedin.com", "")
+          frontmatter.contact.linkedin.replace(
+            "https://www.linkedin.com/in",
+            ""
+          )
         }}
       </a>
     </div>
