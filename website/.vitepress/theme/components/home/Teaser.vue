@@ -24,5 +24,9 @@ const { frontmatter } = useData();
         <Icon :name="link.icon" :size="32" :stroke-width="1" />
       </a>
     </div>
+
+    <a href="/#profile" class="absolute bottom-16">
+      <Icon name="ChevronDown" :size="45" :stroke-width="1" />
+    </a>
   </section>
 </template>

@@ -6,8 +6,10 @@ const { frontmatter } = useData();
 </script>
 
 <template>
-  <section id="profile" class="mb-40 flex items-center justify-center px-8">
-    <div class="max-w-6xl flex flex-col lg:flex-row items-center gap-16">
+  <section id="profile" class="flex items-center justify-center px-8">
+    <div
+      class="pt-56 pb-36 max-w-6xl flex flex-col lg:flex-row items-center gap-16"
+    >
       <img class="hidden lg:block w-80" :src="frontmatter.profile.image" />
       <div class="flex flex-col gap-8">
         <div class="flex gap-8">

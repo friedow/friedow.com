@@ -22,7 +22,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <section class="py-48 px-8 flex items-center justify-center">
+  <section class="pt-56 pb-36 px-8 flex items-center justify-center">
     <div
       class="max-w-6xl flex items-center gap-12 sm:gap-0 lg:gap-16 flex-col-reverse sm:-ml-52 lg:ml-0"
       :class="reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'"
