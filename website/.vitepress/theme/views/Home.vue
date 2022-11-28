@@ -24,7 +24,7 @@ div.body {
   <div class="body font-sans text-white">
     <Navbar />
 
-    <main class="bg-opacity-20 bg-white min-h-screen">
+    <main class="bg-opacity-20 bg-white min-h-screen pb-24">
       <Teaser />
 
       <Profile />
