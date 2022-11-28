@@ -74,15 +74,6 @@ projects:
         - Vue
         - TypeScript
         - Rust
-    - title: dot.base
-      description: A FHIR-fueled Health Record System.
-      github_link: https://github.com/dot-base
-      tags:
-        - Vue
-        - TypeScript
-        - Node
-        - Java
-        - Docker
     - title: Rembrandt
       description: A resource organization and resource usage optimization plattform.
       github_link: https://github.com/bptlab/rembrandt

@@ -14,6 +14,7 @@ export default {
   ],
   title: "friedow",
   description: "custom-made code",
+  appearance: false,
   themeConfig: {
     navbar: {
       logo: "/images/friedow.svg",
