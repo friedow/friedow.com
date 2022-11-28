@@ -21,7 +21,7 @@ profile:
   links:
     - type: button
       text: More about dot.base
-      href: "#dot-base"
+      href: "#projects"
     - type: icon
       icon: Github
       href: https://github.com/friedow
