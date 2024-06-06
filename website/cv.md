@@ -11,14 +11,14 @@ introduction:
 skills:
   title: I'm passionate about
   skills:
-    - title: Frontend Engineering
+    - title: Minimalistic Frontends
       icon: LayoutDashboard
     - title: User Experience
       icon: Users
     - title: Software Architecture
       icon: Layers
-    - title: Clean Code
-      icon: Code
+    - title: Mentoring
+      icon: Presentation
     - title: Open Source
       icon: GitFork
 
@@ -39,11 +39,16 @@ tools:
 experience:
   title: Experience
   jobs:
+    - position: Senior Full-Stack Engineer
+      company:
+        name: understand.ai
+        url: https://understand.ai/
+      time: 2023 - now
     - position: Senior Full-Stack Engineer & Software Architect
       company:
         name: Charité – Universitätsmedizin Berlin
         url: https://www.charite.de/
-      time: 2020 - now
+      time: 2020 - 2023
     - position: Self-employed Software Engineer
       company:
         name: Software- and Webdevelopment Friedow
@@ -53,8 +58,19 @@ experience:
 projects:
   title: Projects
   projects:
+    - title: centerpiece
+      description: Blazing fast, extendable launcher with minimalistic UI for wayland.
+      github_link: https://github.com/friedow/centerpiece
+      tags:
+        - Rust
+        - Nix
+    - title: dotfiles
+      description: NixOS configuration which maximizes screen space by replacing bars with a launcher.
+      github_link: https://github.com/friedow/dotfiles
+      tags:
+        - Nix
     - title: dot.base
-      description: A FHIR-fueled Health Record System.
+      description: FHIR-fueled Health Record System.
       github_link: https://github.com/dot-base
       tags:
         - Vue
@@ -62,15 +78,8 @@ projects:
         - Node
         - Java
         - Docker
-    - title: search
-      description: A spotlight-like search tailored to my daily driver os.
-      github_link: https://github.com/friedow/search
-      tags:
-        - Vue
-        - TypeScript
-        - Rust
     - title: Rembrandt
-      description: A resource organization and resource usage optimization plattform.
+      description: Resource organization and resource usage optimization plattform.
       github_link: https://github.com/bptlab/rembrandt
       tags:
         - Vue
@@ -78,7 +87,7 @@ projects:
         - Node
         - Docker
     - title: Kirito
-      description: A Discord bot encouraging players to join voice channels on Discord Servers.
+      description: Discord bot encouraging players to join voice channels on Discord Servers.
       github_link: https://github.com/friedow/kirito
       tags:
         - TypeScript
@@ -120,5 +129,5 @@ contact:
   phone: "+49 174 3736 717"
   github: https://github.com/friedow
   linkedin: https://www.linkedin.com/in/friedow
-  image: /images/contact/profile.jpg
+  image: /images/profile.jpg
 ---

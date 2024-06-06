@@ -23,7 +23,7 @@ export default {
           text: "About Me",
           href: "/#profile",
         },
-        { text: "Projects", href: "/#projects" },
+        { text: "Open Source", href: "/#open-source" },
       ],
     },
     footer: {

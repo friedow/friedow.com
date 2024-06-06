@@ -54,11 +54,9 @@ div.body {
     <Navbar />
 
     <main
-      class="bg-opacity-20 bg-white min-h-screen px-10 py-28 flex justify-center"
+      class="min-h-screen px-10 py-28 flex justify-center max-w-3xl mx-auto"
     >
-      <div class="w-full max-w-3xl">
-        <Content />
-      </div>
+      <Content />
     </main>
 
     <Footer />

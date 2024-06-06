@@ -24,18 +24,18 @@ div.body {
   <div class="body font-sans text-white">
     <Navbar />
 
-    <main class="bg-opacity-20 bg-white min-h-screen pb-24">
+    <main class="min-h-screen pb-24 px-4 max-w-2xl lg:max-w-6xl mx-auto">
       <Teaser />
 
       <Profile />
 
-      <section id="projects">
-        <Project
-          v-for="(project, projectIndex) in frontmatter.projects"
-          :project="project"
-          :reverse="projectIndex % 2 === 0"
-        />
-      </section>
+      <h1 class="pt-56 text-2xl">Open Source</h1>
+      <hr />
+      <Project
+        v-for="(project, projectIndex) in frontmatter.projects"
+        :project="project"
+        :reverse="projectIndex % 2 === 0"
+      />
     </main>
 
     <Footer />

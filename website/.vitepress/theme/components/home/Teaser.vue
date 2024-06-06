@@ -10,7 +10,7 @@ const { frontmatter } = useData();
     id="home"
     class="min-h-screen flex flex-col items-center justify-center gap-4"
   >
-    <h1 style="font-size: 12rem; line-height: 1">
+    <h1 class="text-9xl">
       {{ frontmatter.teaser.title }}
     </h1>
     <h2 class="text-4xl">{{ frontmatter.teaser.subtitle }}</h2>
