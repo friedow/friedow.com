@@ -21,9 +21,9 @@ export default {
       links: [
         {
           text: "About Me",
-          href: "/#profile",
+          href: "#about-me",
         },
-        { text: "Open Source", href: "/#open-source" },
+        { text: "Open Source", href: "#open-source" },
       ],
     },
     footer: {

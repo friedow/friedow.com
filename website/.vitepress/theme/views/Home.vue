@@ -27,9 +27,10 @@ div.body {
     <main class="min-h-screen pb-24 px-4 max-w-2xl lg:max-w-6xl mx-auto">
       <Teaser />
 
+      <div id="about-me" />
       <Profile />
 
-      <h1 class="pt-56 text-2xl">Open Source</h1>
+      <h1 id="open-source" class="pt-56 text-2xl">Open Source</h1>
       <hr />
       <Project
         v-for="(project, projectIndex) in frontmatter.projects"
