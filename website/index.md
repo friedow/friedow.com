@@ -14,8 +14,8 @@ profile:
   image: /images/christian.jpg
   title: Hi, I'm Christian.
   text:
-    - I'm a senior full-stack developer, software architect and open-source contributor located in Berlin, Germany.
-      I dedicate my time to projects that help to simplify the daily routine of others.
+    - I'm a senior full-stack engineer and open-source contributor located in Berlin, Germany.
+      I dedicate my time to projects that help to simplify the daily routine of others and make them smile.
     - Currently, I work remote at understand.ai, where we create training data for autonomous driving.
   links:
     - type: icon

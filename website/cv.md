@@ -4,40 +4,21 @@ layout: cv
 introduction:
   title: Hi! I'm Christian.
   text:
-    I'm a senior full-stack developer, software architect and open-source contributor located in Berlin, Germany.
-    I dedicate my time to projects that help to simplify the daily routine of others and make them smile 😉.
-    If you have an interesting problem and need both architectural and developmental support, give me a call.
+    I'm a senior full-stack engineer and open-source contributor located in Berlin, Germany.
+    I dedicate my time to projects that help to simplify the daily routine of others and make them smile.
 
 skills:
   title: I'm passionate about
   skills:
-    - title: Minimalistic Frontends
-      icon: LayoutDashboard
     - title: User Experience
       icon: Users
-    - title: Software Architecture
-      icon: Layers
     - title: Mentoring
       icon: Presentation
     - title: Open Source
       icon: GitFork
 
-tools:
-  title: The tech stack I love
-  tools:
-    - title: Vue
-      icon: LayoutDashboard
-    - title: Typescript
-      icon: Users
-    - title: tailwindcss
-      icon: Layers
-    - title: Docker
-      icon: Code
-    - title: NixOS
-      icon: Code
-
 experience:
-  title: Experience
+  title: Professional Experience
   jobs:
     - position: Senior Full-Stack Engineer
       company:
@@ -69,6 +50,7 @@ projects:
       github_link: https://github.com/friedow/dotfiles
       tags:
         - Nix
+        - NixOS
     - title: dot.base
       description: FHIR-fueled Health Record System.
       github_link: https://github.com/dot-base
